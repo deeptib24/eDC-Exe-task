@@ -23,7 +23,7 @@ header {
     padding: 10px 0;
 }
 .left{
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 header.light {
@@ -64,13 +64,25 @@ header nav ul li button{
     padding: 50px 20px;
     margin-top: 50px;
     /* text-align: center; */
-    height: 600px;
+    height: 65vh;
 }
 #hero img{
     margin-right: 40px;
     border-radius: 23px;
     border: 2px solid white;
-}    
+    transform: rotate(9deg);
+    box-shadow: 10px 10px 20px grey;
+}  
+#hero img.dark{
+    border: 2px solid white;
+    transform: rotate(9deg);
+    box-shadow: 10px 10px 20px rgb(43, 42, 42);
+}  
+#hero img.light{
+    border: 2px solid rgb(0, 0, 0);
+    transform: rotate(9deg);
+    box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
 
 #hero.light {
     background: #f4f4f4;
@@ -137,4 +149,12 @@ footer.light {
 footer.dark {
     background: #333;
     color: #fff;
+}
+@media (max-width:819px) {
+    #hero{
+        height: 80vh;
+    }
+    #hero img{
+        height: 40vh;
+    }
 }
