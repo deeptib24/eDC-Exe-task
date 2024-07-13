@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <nav>
             <div class="left">Deepti's Portfolio</div>
             <div class="right">
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#footer">Contact</a></li>
-                <li><button id="theme-switcher"><img src="night-mode.png" alt="" height="25px"></button></li>
-            </ul>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#footer">Contact</a></li>
+                    <li><button id="theme-switcher"><img src="night-mode.png" alt="" height="25px"></button></li>
+                </ul>
         </nav>
     </header>
     <section id="hero">
-        <img src="pic.png" alt="" style="float: right;" height="450px">
-        <h1>Hey, This is Deepti!</h1>
+        <div class="text1">
         
-        <p>I'm a passionate developer trying to build amazing projects.</p>
-       
+        <h1>Hey, This is <span class="name">Deepti!</span></h1>
+
+        <p>Welcome to my portfolio! I am Deepti, a frontend developer currently studying Chemical Engineering at IIT
+            Delhi. Passionate about web development, I continuously strive to enhance my skills in web designing (UI/UX) and web development, and build more complex
+            and impactful projects. <br>Explore my work, and join me on my journey as I learn and grow in the world of
+            frontend development.
+        </p>
+        <section id="box">
+            <button id="see-my-works" class="see-my-works-btn"><a href="#projects"><span>See My Works </span><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 6V18M12 18L7 13M12 18L17 13" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </a> </button>
+
+        </section></div>
+        <div class="pic"><img src="pic.png" alt="" style="float: right;" height="450px"></div>
     </section>
 
     <!-- Projects Section -->
+    <div class="prhead"><h2>My Projects</h2></div>
     <section id="projects">
-        <h2>My Projects</h2>
+        
         <div class="project">
-            <h3>Project 1</h3>
+            <h3>Spotify Clone</h3><img src="favicon.ico" alt="">
             <p>Description of Project 1</p>
         </div>
         <div class="project">
@@ -50,4 +63,5 @@
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
