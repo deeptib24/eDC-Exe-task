@@ -214,18 +214,52 @@ header nav ul li button {
 
 .project {
     margin-bottom: 30px;
+    height: auto;
+    font-size: 1.2em;
+    border-radius: 15px;
 }
-
+a{
+    text-decoration: underline;
+    color: white;
+}
+#projdesc.light{
+    background-color: #333;
+    color: #fff;
+}
+#projdesc.dark{
+    background-color: #fff;
+    color: #333;
+}
+.project img{
+    display: inline-block;
+    vertical-align: middle;
+    height: 2.2rem;
+    margin-left: 9px;
+}
+.project{
+    object-fit: cover;
+    margin-bottom: 24px;
+    width: 100%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+    border-radius: 16px 16px 16px 16px;
+    box-shadow: 3px 3px 0 0 rgb(255, 0, 0);
+    transform: translateX(0%) translateY(0%);
+    transition: 300ms;
+}
+.project:hover{
+    background-color: red;
+    box-shadow: 6px 6px 0 0 red;
+    transform: translateX(-1%) translateY(-1%);
+}
 .project h3 {
     margin-bottom: 10px;
     font-size: 1.5em;
 }
-
 .project p {
     font-size: 1em;
 }
-
-/* Footer Styling */
 footer {
     background: #333;
     color: #fff;
@@ -256,7 +290,6 @@ footer.dark {
     #hero {
         margin-top: 20px;
         grid-template-columns: 1fr 1fr;
-        /* text-align: center; */
     }
 
     .text1 {
@@ -319,7 +352,6 @@ footer.dark {
     #hero {
         margin-top: 20px;
         grid-template-columns: 1fr 1fr;
-        /* text-align: center; */
     }
 
     .text1 {
@@ -368,48 +400,3 @@ footer.dark {
         margin-bottom: 20px;
     }
 }
-
-/* @media screen and (max-width: 1023px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-
-    #hero {
-        margin-top: 20px;
-    }
-
-    .text1 {
-        margin-top: 0;
-        margin-bottom: 40px;
-        text-align: left;
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    .hero-img {
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    #projects h2 {
-        font-size: 1.5em;
-    }
-
-    #hero h1 {
-        font-size: 2em;
-    }
-
-    #hero p {
-        font-size: 1.2em;
-    }
-
-    #box {
-        margin-top: 24px;
-        margin-right: 32px;
-    }
-} */
