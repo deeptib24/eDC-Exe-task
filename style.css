@@ -77,21 +77,22 @@ header nav ul li button {
     padding: 50px 20px;
     margin-top: 50px;
     display: grid;
-    grid-template-columns: auto auto;
-    height: 70vh;
-    margin-left: 30px;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    gap: 20px;
 }
 
 #hero .text1 {
     margin-top: 0;
     margin-bottom: 40px;
-    text-align: left;
+    text-align: center;
     padding-left: 0;
     padding-right: 0;
 }
 
 #hero .pic img {
-    margin-right: 20px;
+    width: 25vw;
+    margin-right: 50px;
     border-radius: 23px;
     border: 2px solid white;
     transform: rotate(9deg);
@@ -139,20 +140,6 @@ header nav ul li button {
 .name{
     color: red;
 }
-/* #box button{
-    font-size: 1.3em;
-    height: 5.2vh;
-    width: 15vw;
-    background-color: red;
-    color: white;
-    display: inline-block;
-    border: 2px solid black;
-    box-shadow: 2px 2px 0 black;
-    border-radius: 8px;
-    justify-content: center;
-    margin-left: 50px;
-    margin-top: 4vh;
-} */
 #box button {
     text-decoration: none;
     color: white;
@@ -160,9 +147,7 @@ header nav ul li button {
     padding-bottom: 16px;
     padding-left: 24px;
     padding-right: 24px;
-    text-decoration: none;
-    justify-content: center;
-    border-radius: 8px 8px 8px 8px;
+    border-radius: 8px;
     border-width: 2px;
     border-style: solid;
     border-color: black;
@@ -207,9 +192,8 @@ header nav ul li button {
     padding: 50px 20px;
     text-align: center; 
     display: grid;
-    height: 100vh;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     transition: transform 0.4s ease-in-out;
 }
 
@@ -258,8 +242,134 @@ footer.dark {
     background: #333;
     color: #fff;
 }
-
+/* Add these media queries for better responsiveness */
 @media screen and (max-width: 1023px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero {
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr;
+        /* text-align: center; */
+    }
+
+    .text1 {
+        margin-top: 0;
+        margin-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .pic {
+        margin-top: 20px;
+    }
+
+    #hero .pic img {
+        width: 75%;
+        margin-bottom: 20px;
+    }
+
+    #projects {
+        padding: 50px 20px;
+        display: block;
+    }
+
+    .project {
+        margin-bottom: 30px;
+    }
+
+    #hero h1 {
+        font-size: 2em;
+    }
+
+    #hero p {
+        font-size: 1.2em;
+    }
+
+    #box {
+        margin-top: 24px;
+    }
+
+    .prhead {
+        text-align: center;
+        margin-top: 80px;
+    }
+
+    .project {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #hero {
+        margin-top: 20px;
+        grid-template-columns: 1fr 1fr;
+        /* text-align: center; */
+    }
+
+    .text1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .pic {
+        margin-top: 20px;
+    }
+
+    .hero-img {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    #projects {
+        padding: 30px 10px;
+        display: block;
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+
+    #hero h1 {
+        font-size: 1.5em;
+    }
+
+    #hero p {
+        font-size: 1em;
+    }
+
+    #box {
+        margin-top: 20px;
+    }
+
+    .prhead {
+        text-align: center;
+        margin-top: 60px;
+    }
+
+    .project {
+        margin-bottom: 20px;
+    }
+}
+
+/* @media screen and (max-width: 1023px) {
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -302,4 +412,4 @@ footer.dark {
         margin-top: 24px;
         margin-right: 32px;
     }
-}
+} */
